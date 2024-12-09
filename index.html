@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRL4195 - Yapay Zeka Destekli Kriz Yönetimi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PRL4195 - Yapay Zeka Destekli Kriz Yönetimi</h1>
+            <p class="subtitle">Crisis Communication Strategy Assistant</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="crisisName">Crisis Name:</label>
+                    <input 
+                        type="text" 
+                        id="crisisName" 
+                        placeholder="Enter the crisis name..."
+                        required
+                    >
+                </div>
+                <button id="submitBtn" class="submit-button">
+                    Analyze Crisis
+                    <div class="spinner hidden"></div>
+                </button>
+            </div>
+
+            <div class="output-section">
+                <div id="result" class="result-box hidden">
+                    <div id="responseContent" class="response-content"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by Fine-tuned Google AI Studio Model | Designed by Samet Cantürk</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
